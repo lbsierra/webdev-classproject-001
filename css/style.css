@@ -7,7 +7,6 @@ html {
 
 body {
 	color: #333333;
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 1.6;
 	background-color: bisque;
@@ -19,18 +18,12 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Courier New", Courier, monospace;
 	font-weight: bold;
 	line-height: 1;
 	text-transform: uppercase;
 	margin: 0 0 1.6rem;
 }
 
-p {
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.6;
-	margin: 0 0 1.6rem;
-}
 
 a {
 	color: #0056b3;
@@ -52,7 +45,7 @@ hr {
 /* Layout */
 
 .main {
-	background-color: bisque;
+	background: radial-gradient(ellipse at top, #6E2AF9, #681993), radial-gradient(ellipse at bottom, #232293, #2e2d88);
 	border: 2px solid black;
 	width: 100%;
 	margin: auto;
@@ -63,17 +56,46 @@ hr {
 
 .container {
 	margin: auto;
-	background-color: rgb(191, 200, 210);
+	background: transparent;
+	border: 1px solid white;
+	height: 90%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-/* .card-quote {
+.card-quote {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
 }
 
-.quote {
-
+p {
+text-transform: none;
+line-height: 2.0;
 }
 
-.author {
+blockquote::before {
+	content: '\201c';
+	font-size: 3em;
+	font-family: 'Arial Black';
+	align-self: flex-start;
+
+  }
+
+  blockquote::after {
+	content: '\201d';
+	font-size: 3em;
+	font-family: 'Arial Black';
+	align-self: flex-end;
+  }
+/* .author {
 
 }
 */
